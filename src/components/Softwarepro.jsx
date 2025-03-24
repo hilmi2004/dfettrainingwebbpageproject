@@ -43,7 +43,7 @@ const Softwarepro = () => {
                         </div>
                         <a href="public/EFEKEMO%20VICTORY%20OMOGHENE-%20CV%20(1)%20(1).pdf" download={"My_Cv.pdf"}>
                             <div
-                                className="bg-black w-[20rem] h-[5rem] rounded-full flex  ml-50 space-x-3 mt-[3rem] ">
+                                className="bg-black w-[20rem] h-[5rem] rounded-full flex   lg:ml-50 space-x-3 mt-[3rem] ">
 
                                 <img src="img/arrowomogot-removebg-preview.png" className="w-20" alt=""/>
                                 <button className="bg-orange-500 rounded-full w-full">Download CV</button>

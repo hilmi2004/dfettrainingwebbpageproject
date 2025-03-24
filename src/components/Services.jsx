@@ -4,11 +4,11 @@ const Services = () => {
     return (
         <div className="bg-[url('https://img.freepik.com/premium-photo/close-up-row-black-white-lines-with-picture-line-black-white-lines_994023-354573.jpg?w=360')] bg-no-repeat bg-cover min-h-screen w-screen max-w-screen overflow-hidden text-white py-10 px-5">
             <div className="container mx-auto">
-                <div className="text-center md:text-left md:flex md:justify-between md:items-center mb-10">
-                    <h2 className="text-4xl md:text-5xl font-semibold">
+                <div className="text-center md:text-left md:flex lg:justify-between items-center md:justify-between md:items-center mb-10">
+                    <h2 className="text-4xl text-white md:text-5xl font-semibold">
                         My <span className="text-orange-500">Expertise</span>
                     </h2>
-                    <p className="font-semibold mt-4 md:mt-0 md:ml-11 text-lg md:text-base">
+                    <p className="font-semibold mt-4 md:mt-0 md:ml-11 text-lg text-white md:text-base">
                         Design Tomorrow Interface today, with well-tailored research
                     </p>
                 </div>
@@ -37,7 +37,7 @@ const Services = () => {
 const ServiceCard = ({ title, description, imgSrc }) => {
     return (
         <div className="bg-white/10 backdrop-blur-md rounded-4xl shadow-md border border-white hover:scale-105 transition-transform duration-300 max-w-md">
-            <div className="py-9 px-10">
+            <div className="py-9 px-10 text-white">
                 <h2 className="mb-8 text-4xl">{title}</h2>
                 <p className="tracking-wide">{description}</p>
             </div>

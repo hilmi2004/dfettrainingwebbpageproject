@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hire = () => {
     return (
-        <div className="bg-gray-100 w-full min-h-screen max-w-screen overflow-hidden flex flex-col items-center justify-center px-4 py-9">
+        <div className="bg-gray-100  min-h-screen max-w-screen w-screen overflow-hidden  flex flex-col items-center justify-center px-4 py-9">
             <div className="flex flex-col lg:flex-row items-center justify-center space-y-10 lg:space-y-0 lg:space-x-16 w-full max-w-6xl">
                 <div className="w-full flex justify-center">
                     <img className="w-[20rem] sm:w-[30rem] md:w-[35rem] lg:w-[40rem] h-auto" src="img/Component%2013.png" alt="" />

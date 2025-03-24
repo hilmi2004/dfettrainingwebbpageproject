@@ -1,7 +1,9 @@
 import React from 'react';
-import { FaInstagram, FaTwitter, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import {FaBehance, FaInstagram, FaTwitter, FaWhatsapp, FaYoutube} from "react-icons/fa";
 
 const Footer = () => {
+
+    let newyear = new Date().getFullYear();
     return (
         <div className="bg-[#1E1E1E] py-16 px-4 max-w-screen w-screen overflow-hidden">
             <div className="container mx-auto">
@@ -37,11 +39,12 @@ const Footer = () => {
                             <FaYoutube className="hover:text-white transition duration-300 cursor-pointer"/>
                             <FaInstagram className="hover:text-white transition duration-300 cursor-pointer"/>
                             <FaTwitter className="hover:text-white transition duration-300 cursor-pointer"/>
+                            <a target="_blank" href="https://www.behance.net/omogheneefekemo"><FaBehance className="hover:text-white transition duration-300 cursor-pointer"/></a>
                         </div>
                     </div>
 
                     {/* Navigation & Contact */}
-                    <div className="grid grid-cols-2 gap-6 text-gray-300 text-sm md:text-base">
+                    <div className="grid grid-cols-2  text-gray-300 text-sm md:text-base">
                         {/* Navigation Section */}
                         <div>
                             <h2 className="text-orange-500 mb-4 text-lg font-semibold">Navigation</h2>
@@ -67,15 +70,15 @@ const Footer = () => {
                     {/* Subscription Section */}
                     <div>
                         <h2 className="text-orange-500 mb-4 text-lg font-semibold">Get the latest updates</h2>
-                        <div className="relative w-full">
+                        <div className="relative w-full ">
                             <input
                                 type="email"
                                 name="email"
                                 placeholder="Email Address"
                                 className="p-3 md:p-4 w-full text-gray-900 bg-white rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"
                             />
-                            <button className="absolute right-3 top-3 bg-orange-500 px-3 py-2 text-white rounded-lg hover:bg-orange-600 transition duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                            <button className="absolute lg:right-3 lg:top-3 right-2 top-2 bg-orange-500 px-3 py-2 text-white rounded-lg hover:bg-orange-600 transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5  " fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4 4l16 8-16 8V4z" />
                                 </svg>
                             </button>
@@ -87,7 +90,7 @@ const Footer = () => {
 
                 {/* Footer Bottom */}
                 <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm text-center md:text-left">
-                    <p>© 2023 JCREA. All Rights Reserved.</p>
+                    <p>© {newyear} JCREA. All Rights Reserved.</p>
                     <div className="flex space-x-4 mt-4 md:mt-0">
                         <p className="hover:text-white cursor-pointer">User Terms</p>
                         <p className="hover:text-white cursor-pointer">Conditions</p>

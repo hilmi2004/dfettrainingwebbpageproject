@@ -40,10 +40,11 @@ const Projects = () => {
     if (!isLoaded) return null; // Prevent blank screen issue
 
     return (
-        <div className="bg-white py-5 min-h-screen  max-w-screen overflow-hidden w-screen">
+        <div className="bg-white py-5 min-h-screen max-w-screen w-screen overflow-hidden">
             <div className="container mx-auto px-4 mt-10">
                 {/* Header & Button */}
-                <div className="flex justify-between items-center">
+                <div className="lg:flex space-y-4 lg:justify-between items-center">
+
                     <h2 className="text-6xl">
                         Let's have a look at <br />
                         my <span className="text-orange-500">Projects</span>
@@ -51,7 +52,7 @@ const Projects = () => {
                     <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
-                        className="bg-orange-500 text-white rounded-full w-[10rem] h-[5rem] font-bold transition-all"
+                        className="bg-orange-500 text-white rounded-full lg:w-[10rem] w-full h-[5rem] font-bold transition-all"
                         onClick={() => setIsCarousel(!isCarousel)}
                     >
                         {isCarousel ? "See Less" : "See All"}
@@ -145,6 +146,16 @@ const Projects = () => {
                         </motion.div>
                     )}
                 </AnimatePresence>
+            </div>
+
+            <div className=" lg:flex lg:flex-col mt-7 lg:items-center text-center lg:mx-[25rem]">
+                <h1 className="text-[48px] font-bold text-gray-600">
+                    Utifi - Financial Solution
+                </h1>
+
+                <p className="mt-5 text-[20px] tracking-wide">Utifi Finance Mobile application is my most recent design project. It’s a <br/>
+                    financial app where all kinds of transactions can be carried out like airtime <br/>
+                    and daata recharge, buying and gifting Giftcards and lots more.</p>
             </div>
         </div>
     );

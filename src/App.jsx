@@ -9,6 +9,7 @@ import Hire from "./components/Hire.jsx";
 import Projects from "./components/Projects.jsx";
 import Idea from "./components/Idea.jsx";
 import Footer from "./components/Footer.jsx";
+import Testimonial from "./components/Testimonial.jsx";
 
 
 const sectionVariants = {
@@ -90,6 +91,17 @@ function App() {
                 viewport={{ once: true, amount: 0.2 }}
             >
                 <Projects />
+            </motion.div>
+
+            <motion.div
+                variants={sectionVariants}
+                initial="hidden"
+                whileInView="visible"
+                transition={transition}
+                viewport={{ once: true, amount: 0.2 }}
+            >
+
+                <Testimonial/>
             </motion.div>
 
             <motion.div
