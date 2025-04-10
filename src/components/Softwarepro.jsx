@@ -16,7 +16,7 @@ const Softwarepro = () => {
                         />
                     </div>
                     <div className="w-full lg:w-1/2 lg:pl-12 mt-6 lg:mt-0">
-                        <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+                        <h1 className="text-4xl text-black md:text-5xl font-bold leading-tight">
                             Who is <span className="text-orange-500"> Omoghene <br className="hidden md:block"/> Efekemo?</span>
                         </h1>
                         <p className="tracking-wide leading-relaxed text-lg mt-5 text-gray-700">

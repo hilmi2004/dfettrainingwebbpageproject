@@ -5,10 +5,10 @@ const Hire = () => {
         <div className="bg-gray-100  min-h-screen max-w-screen w-screen overflow-hidden  flex flex-col items-center justify-center px-4 py-9">
             <div className="flex flex-col lg:flex-row items-center justify-center space-y-10 lg:space-y-0 lg:space-x-16 w-full max-w-6xl">
                 <div className="w-full flex justify-center">
-                    <img className="w-[20rem] sm:w-[30rem] md:w-[35rem] lg:w-[40rem] h-auto" src="img/Component%2013.png" alt="" />
+                    <img className="w-[20rem] sm:w-[30rem] md:w-[35rem] items-center lg:w-[40rem] h-auto" src="img/Component%2013.png" alt="" />
                 </div>
-                <div className="space-y-6 text-center lg:text-left">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+                <div className="space-y-6  text-center lg:text-left">
+                    <h2 className="text-3xl text-black sm:text-4xl md:text-5xl font-bold">
                         Why <span className="text-orange-500">Hire Me</span>?
                     </h2>
                     <ul className="space-y-3 text-lg sm:text-xl text-gray-600">
@@ -28,7 +28,7 @@ const Hire = () => {
                         </div>
                     </div>
                     <a href="public/EFEKEMO%20VICTORY%20OMOGHENE-%20CV%20(1)%20(1).pdf" download="My_Cv.pdf">
-                        <button  className="px-17 py-10 mt-8 font-semibold rounded-3xl border-1 border-black hover:bg-black hover:text-white transition duration-300">
+                        <button  className="px-17 py-10 mt-8 font-semibold rounded-3xl border-1 border-black hover:bg-black text-black hover:text-white transition duration-300">
                             Hire me
                         </button>
                     </a>

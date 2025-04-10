@@ -2,20 +2,20 @@ import React from 'react';
 
 const Services = () => {
     return (
-        <div className="bg-[url('https://img.freepik.com/premium-photo/close-up-row-black-white-lines-with-picture-line-black-white-lines_994023-354573.jpg?w=360')] bg-no-repeat bg-cover min-h-screen w-screen max-w-screen overflow-hidden text-white py-10 px-5">
+        <div className="bg-[url('https://img.freepik.com/premium-photo/close-up-row-black-white-lines-with-picture-line-black-white-lines_994023-354573.jpg?w=360')] bg-no-repeat bg-cover min-h-screen w-full overflow-hidden text-white py-10 px-4 sm:px-6 lg:px-8">
             <div className="container mx-auto">
-                <div className="text-center md:text-left md:flex lg:justify-between items-center md:justify-between md:items-center mb-10">
-                    <h2 className="text-4xl text-white md:text-5xl font-semibold">
+                <div className="text-center md:text-left flex flex-col md:flex-row justify-between items-center mb-8 sm:mb-10">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4 md:mb-0">
                         My <span className="text-orange-500">Expertise</span>
                     </h2>
-                    <p className="font-semibold mt-4 md:mt-0 md:ml-11 text-lg text-white md:text-base">
-                        Design Tomorrow Interface today, with well-tailored research
+                    <p className="font-semibold text-base sm:text-lg md:text-base max-w-md md:ml-8">
+                        Design Tomorrow's Interface today, with well-tailored research
                     </p>
                 </div>
-                <div className="mt-20 lg:flex justify-center items-center space-y-10 lg:space-y-0 lg:space-x-10">
+                <div className="mt-12 sm:mt-16 lg:mt-20 flex flex-col lg:flex-row justify-center items-center gap-8 sm:gap-10">
                     <ServiceCard
                         title="UI Design"
-                        description="I collaborate with you to craft a seamless and engaging user interface for your new business. From in-depth research to intuitive design, I ensure a visually appealing and user-friendly experience that enhances your brand’s identity and functionality."
+                        description="I collaborate with you to craft a seamless and engaging user interface for your new business. From in-depth research to intuitive design, I ensure a visually appealing and user-friendly experience that enhances your brand's identity and functionality."
                         imgSrc="img/Mockup%2012%20(2).png"
                     />
                     <ServiceCard
@@ -36,12 +36,17 @@ const Services = () => {
 
 const ServiceCard = ({ title, description, imgSrc }) => {
     return (
-        <div className="bg-white/10 backdrop-blur-md rounded-4xl shadow-md border border-white hover:scale-105 transition-transform duration-300 max-w-md">
-            <div className="py-9 px-10 text-white">
-                <h2 className="mb-8 text-4xl">{title}</h2>
-                <p className="tracking-wide">{description}</p>
+        <div className="bg-white/10 backdrop-blur-md rounded-3xl sm:rounded-4xl shadow-md border border-white hover:scale-105 transition-transform duration-300 w-full max-w-md overflow-hidden">
+            <div className="py-6 sm:py-8 px-6 sm:px-10 text-white">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">{title}</h2>
+                <p className="text-sm sm:text-base tracking-wide leading-relaxed">{description}</p>
             </div>
-            <img className="rounded-4xl w-full" src={imgSrc} alt={title} />
+            <img
+                className="w-full h-auto rounded-b-3xl sm:rounded-b-4xl"
+                src={imgSrc}
+                alt={title}
+                loading="lazy"
+            />
         </div>
     );
 };
